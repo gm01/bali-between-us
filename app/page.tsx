@@ -287,7 +287,7 @@ export default function Home() {
             <img src="./images/hero-cartoon-v2.png" alt="산호초와 대나무 표지판이 있는 밝은 열대 바다 일러스트" />
             <div className="hero-sign-copy">
               <p>WELCOME TO</p>
-              <h1>BALI<br />MODE</h1>
+              <h1><span>BALI</span><span>MODE</span></h1>
               <strong>ON!</strong>
             </div>
             <span className="sun-sticker">14<br /><small>DAYS</small></span>
