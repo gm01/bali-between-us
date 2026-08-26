@@ -114,7 +114,7 @@ const stayGroups = [
   {
     area: "공항 인근 · Tuban", dates: "10.21 — 10.22", nights: "1박", note: "21:45 착륙 뒤 이동 피로를 줄이는 잠자리",
     options: [
-      { tag: "OUR PICK · 실속", name: "Asta House", price: "₩21,129 / 1박", desc: "공항 0.6km · 세금 포함 · 더블베드", cancel: "10/20 전 무료 취소 · 검색 당시 7실", href: "https://www.booking.com/hotel/id/asta-house.ko.html?checkin=2026-10-21&checkout=2026-10-22&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW", pick: true },
+      { tag: "PICK! · 실속", name: "Asta House", price: "₩21,129 / 1박", desc: "공항 0.6km · 세금 포함 · 더블베드", cancel: "10/20 전 무료 취소 · 검색 당시 7실", href: "https://www.booking.com/hotel/id/asta-house.ko.html?checkin=2026-10-21&checkout=2026-10-22&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW", pick: true },
       { tag: "편안한 도착", name: "The Vira Bali", price: "₩77,690 / 1박", desc: "공항 1km · 세금·조식 포함", cancel: "무료 취소 표시 · 마감 시각 결제 전 확인", href: "https://www.booking.com/hotel/id/the-vira-bali.ko.html?checkin=2026-10-21&checkout=2026-10-22&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW" },
       { tag: "최소 동선", name: "Novotel Airport", price: "약 ₩134,005 / 1박", desc: "공항 300m · 킹룸 · 터미널 연결", cancel: "검색 카드에 무료 취소 문구 없음", href: "https://www.booking.com/hotel/id/novotel-bali-ngurah-rai-airport-opening-june-2016.ko.html?checkin=2026-10-21&checkout=2026-10-22&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW" },
     ],
@@ -122,7 +122,7 @@ const stayGroups = [
   {
     area: "Ubud", dates: "10.22 — 10.26", nights: "4박", note: "축제 기간, 도보 접근성과 조기 예약이 핵심",
     options: [
-      { tag: "OUR PICK · 위치", name: "Umah Gatra Ubud", price: "₩150,328 / 4박", desc: "중심 350m · 세금·조식 포함 · 위치 9.7", cancel: "10/19 전 무료 취소 · 10/17 전 결제 없음", href: "https://www.booking.com/hotel/id/umah-gatra-ubud.ko.html?checkin=2026-10-22&checkout=2026-10-26&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW", pick: true },
+      { tag: "PICK! · 위치", name: "Umah Gatra Ubud", price: "₩150,328 / 4박", desc: "중심 350m · 세금·조식 포함 · 위치 9.7", cancel: "10/19 전 무료 취소 · 10/17 전 결제 없음", href: "https://www.booking.com/hotel/id/umah-gatra-ubud.ko.html?checkin=2026-10-22&checkout=2026-10-26&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW", pick: true },
       { tag: "가성비 풀빌라", name: "Hidden Point Villa", price: "₩422,586 / 4박", desc: "140㎡ · 1베드룸 전용 풀 · 평점 9.7", cancel: "중심 1.9km · 해당 요금 검색 당시 1실", href: "https://www.booking.com/hotel/id/hidden-point-villa.ko.html?checkin=2026-10-22&checkout=2026-10-26&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW" },
       { tag: "기념일", name: "Mayaloka Villas", price: "₩1,144,564 / 4박", desc: "100㎡ 전용 풀빌라 · 중심 0.7km", cancel: "세금·조식 포함 · 무료 취소 표시", href: "https://www.booking.com/hotel/id/mayaloka-villas-ubud.ko.html?checkin=2026-10-22&checkout=2026-10-26&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW" },
     ],
@@ -131,7 +131,7 @@ const stayGroups = [
     area: "Gili Air", dates: "10.26 — 10.30", nights: "4박", note: "파티보다 바다와 둘만의 시간이 좋은 커플 섬",
     options: [
       { tag: "예산 친화", name: "Molah Gili Villa", price: "₩187,816 / 4박", desc: "해변 150m · 세금·조식 포함 · 평점 9.3", cancel: "무료 취소 표시 · 검색 당시 2실", href: "https://www.booking.com/hotel/id/molah-gili-villa.ko.html?checkin=2026-10-26&checkout=2026-10-30&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW" },
-      { tag: "OUR PICK · 커플", name: "Villa Saia", price: "₩704,310 / 4박", desc: "150㎡ 독채 · 프라이빗 풀 · 평점 9.6", cancel: "세금·조식 포함 · 무료 취소 표시", href: "https://www.booking.com/hotel/id/villa-saia.ko.html?checkin=2026-10-26&checkout=2026-10-30&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW", pick: true },
+      { tag: "PICK! · 커플", name: "Villa Saia", price: "₩704,310 / 4박", desc: "150㎡ 독채 · 프라이빗 풀 · 평점 9.6", cancel: "세금·조식 포함 · 무료 취소 표시", href: "https://www.booking.com/hotel/id/villa-saia.ko.html?checkin=2026-10-26&checkout=2026-10-30&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW", pick: true },
       { tag: "부티크", name: "The KOHO Air", price: "₩757,524 / 4박", desc: "해변 100m · 항구 도보 약 5분 · 평점 9.5", cancel: "룸온리 · 10/19 전 무료 취소", href: "https://www.booking.com/hotel/id/the-koho-air.ko.html?checkin=2026-10-26&checkout=2026-10-30&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW" },
     ],
   },
@@ -139,7 +139,7 @@ const stayGroups = [
     area: "Sidemen", dates: "10.30 — 11.01", nights: "2박", note: "관광보다 숙소의 전망과 고요가 목적",
     options: [
       { tag: "실속", name: "Abian View House", price: "₩70,431 / 2박", desc: "평점 9.8 · 위치 9.6 · 세금·조식 포함", cancel: "무료 취소 표시 · 검색 당시 2실", href: "https://www.booking.com/hotel/id/abian-view-house.ko.html?checkin=2026-10-30&checkout=2026-11-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW" },
-      { tag: "OUR PICK · 전망", name: "Patal Kikian Villa", price: "₩453,137 / 2박", desc: "아궁산·논·계곡 전망 · 50㎡ 방갈로", cancel: "10/25 전 무료 취소 · 10/23 전 결제 없음", href: "https://www.booking.com/hotel/id/patal-kikian-sidemen.ko.html?checkin=2026-10-30&checkout=2026-11-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW", pick: true },
+      { tag: "PICK! · 전망", name: "Patal Kikian Villa", price: "₩453,137 / 2박", desc: "아궁산·논·계곡 전망 · 50㎡ 방갈로", cancel: "10/25 전 무료 취소 · 10/23 전 결제 없음", href: "https://www.booking.com/hotel/id/patal-kikian-sidemen.ko.html?checkin=2026-10-30&checkout=2026-11-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW", pick: true },
       { tag: "프라이빗 풀", name: "The Sidemen Villa", price: "₩620,920 / 2박", desc: "전용 풀 · 플로팅 조식 1회 · 평점 9.7", cancel: "무료 취소 표시 · 검색 당시 1실", href: "https://www.booking.com/hotel/id/the-villa-sidemen.ko.html?checkin=2026-10-30&checkout=2026-11-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW" },
     ],
   },
@@ -148,7 +148,7 @@ const stayGroups = [
     options: [
       { tag: "좋은 위치", name: "La Cama Bali", price: "₩218,336 / 3박", desc: "해변 450m · 위치 9.6 · 평점 9.5", cancel: "세금 포함 · 무료 취소 표시 · 조식 제외", href: "https://www.booking.com/hotel/id/la-cama-bali.ko.html?checkin=2026-11-01&checkout=2026-11-04&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW" },
       { tag: "성인 전용", name: "PinkCoco Uluwatu", price: "₩453,503 / 3박", desc: "해변 350m · 킹베드 · 위치 9.5", cancel: "세금·조식 포함 · 무료 취소 문구 없음", href: "https://www.booking.com/hotel/id/pinkcoco-bali.ko.html?checkin=2026-11-01&checkout=2026-11-04&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW" },
-      { tag: "OUR PICK · 피날레", name: "Renaissance Uluwatu", price: "약 ₩672,303 / 3박", desc: "43㎡ 킹룸 · 조식 · 인피니티풀·스파", cancel: "10/29 전 무료 취소 · 10/27 전 결제 없음", href: "https://www.booking.com/hotel/id/renaissance-bali-uluwatu-resort-spa.ko.html?checkin=2026-11-01&checkout=2026-11-04&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW", pick: true },
+      { tag: "PICK! · 마지막", name: "Renaissance Uluwatu", price: "약 ₩672,303 / 3박", desc: "43㎡ 킹룸 · 조식 · 인피니티풀·스파", cancel: "10/29 전 무료 취소 · 10/27 전 결제 없음", href: "https://www.booking.com/hotel/id/renaissance-bali-uluwatu-resort-spa.ko.html?checkin=2026-11-01&checkout=2026-11-04&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW", pick: true },
     ],
   },
 ];
@@ -282,7 +282,7 @@ export default function Home() {
     <main>
       <section className="hero" id="top">
         <nav className="topbar" aria-label="여행 수첩 메뉴">
-          <a className="wordmark" href="#top" aria-label="첫 화면으로">BALI, <i>between us</i></a>
+          <a className="wordmark" href="#top" aria-label="첫 화면으로"><span>BALI</span> MODE <b>●</b></a>
           <div className="navlinks">
             <a href="#route">여정</a><a href="#stays">스테이</a><a href="#spots">먹고·보고</a>
             <a className="nav-cta" href="#checklist">출발 준비</a>
@@ -290,28 +290,27 @@ export default function Home() {
         </nav>
 
         <div className="hero-grid">
-          <div className="hero-copy">
-            <p className="eyebrow">OUR ISLAND NOTE · VOL. 01</p>
-            <h1>둘이서 천천히,<br /><em>발리의 결</em>을 따라.</h1>
-            <p className="lede">우붓의 초록에서 길리의 투명한 바다까지. 이동은 가볍게, 머무는 시간은 길게 잡은 14박 15일의 기록입니다.</p>
-            <div className="hero-actions"><a className="primary-button" href="#route">15일 여정 펼치기</a><span>2026.10.21 — 11.04</span></div>
+          <div className="cartoon-scene" aria-label="트로피컬 카툰 풍의 발리 바다 풍경">
+            <img src="./images/hero-cartoon-v2.png" alt="산호초와 대나무 표지판이 있는 밝은 열대 바다 일러스트" />
+            <div className="hero-sign-copy">
+              <p>WELCOME TO</p>
+              <h1>BALI<br />MODE</h1>
+              <strong>ON!</strong>
+            </div>
+            <span className="sun-sticker">15<br /><small>DAYS</small></span>
           </div>
 
-          <aside className="trip-ticket" aria-label="항공편과 여행 개요">
-            <div className="ticket-stamp">TWO<br />TRAVELLERS</div>
-            <p className="ticket-kicker">ROUND TRIP · JEJU AIR</p>
-            <div className="airport-row">
-              <div><strong>ICN</strong><small>10/21 · 15:40</small></div>
-              <span className="flight-line">7C5303</span>
-              <div className="align-right"><strong>DPS</strong><small>10/21 · 21:45</small></div>
-            </div>
-            <div className="route-sketch"><span>UBUD</span><i>→</i><span>GILI</span><i>→</i><span>SIDEMEN</span><i>→</i><span>SOUTH</span></div>
-            <div className="ticket-footer"><span>14 NIGHTS</span><span>5 STOPS</span><span>7C5304 · 11/04</span></div>
-          </aside>
+          <div className="hero-copy">
+            <p className="eyebrow">VACATION SYSTEM · READY</p>
+            <h2>먹고, 눕고,<br />헤엄치고,<br /><em>가끔 이동.</em></h2>
+            <p className="lede">우붓 4박, 길리 에어 4박, 시드멘 2박, 울루와뚜 3박. 계획은 똑똑하게, 분위기는 대충 좋게.</p>
+            <div className="hero-actions"><a className="primary-button" href="#route">일정 보러 가기 ↓</a><span>2026.10.21 — 11.04</span></div>
+            <div className="flight-chip"><b>7C5303</b><span>ICN 15:40 → DPS 21:45</span></div>
+          </div>
         </div>
 
         <div className="route-peek">
-          <p>THE ROUTE</p>
+          <p>ROUTE!</p>
           <ol>
             <li><b>00</b><span>공항 인근</span><small>1박 · 늦은 도착</small></li>
             <li><b>01</b><span>우붓</span><small>4박 · 숲과 예술</small></li>
@@ -330,7 +329,7 @@ export default function Home() {
       </section>
 
       <section className="notebook-section route-section" id="route">
-        <SectionHeading number="01" kicker="DAY BY DAY" title="15일, 한 장씩 넘겨보기" copy="빡빡한 체크리스트보다 하루의 리듬을 정했습니다. 이동일 저녁은 비워두고, 바다 일정은 늘 오전에 둡니다." />
+        <SectionHeading number="01" kicker="DAY BY DAY" title="15일, 대충 이런 흐름" copy="이동일 저녁은 비우고 바다는 오전에. 나머지는 그날 컨디션과 날씨가 정합니다." />
 
         <div className="route-line" aria-label="전체 숙박 루트">
           {[
@@ -361,9 +360,9 @@ export default function Home() {
 
       <section className="stay-section" id="stays">
         <div className="notebook-section stay-inner">
-          <SectionHeading number="02" kicker="WHERE TO STAY" title="잠드는 곳도 여행이니까" copy="성인 2명·객실 1개·정확한 날짜로 2026년 8월 26일 조회했습니다. 가격은 당시 노출값이며 결제 전 재고·세금·취소 시각을 다시 확인하세요." />
+          <SectionHeading number="02" kicker="WHERE TO STAY" title="잘 곳은 미리 잡자" copy="성인 2명·객실 1개·정확한 날짜로 2026년 8월 26일 조회했습니다. 가격은 당시 노출값이며 결제 전 재고·세금·취소 시각을 다시 확인하세요." />
 
-          <div className="availability-note"><span>LIVE CHECK</span><p><strong>‘예약 가능’은 검색 결과에 객실 선택이 노출된 상태</strong>를 뜻합니다. 객실을 보유하거나 가격을 보장하는 것은 아니므로 무료 취소 요금으로 먼저 선점하는 편이 안전합니다.</p></div>
+          <div className="availability-note"><span>ROOM CHECK!</span><p><strong>‘예약 가능’은 검색 결과에 객실 선택이 노출된 상태</strong>를 뜻합니다. 객실을 보유하거나 가격을 보장하는 것은 아니므로 무료 취소 요금으로 먼저 선점하는 편이 안전합니다.</p></div>
 
           <div className="stay-groups">
             {stayGroups.map((group, groupIndex) => (
@@ -388,7 +387,7 @@ export default function Home() {
       </section>
 
       <section className="notebook-section guide-section" id="spots">
-        <SectionHeading number="03" kicker="EAT & SEE" title="먹고, 걷고, 바라볼 곳" copy="운영시간과 가격은 2026년 8월 26일 확인 기준입니다. 종교행사·날씨·사유 행사로 바뀔 수 있으니 방문 당일 공식 링크를 한 번 더 확인하세요." />
+        <SectionHeading number="03" kicker="EAT · SEE · SWIM" title="먹고 보고 헤엄치기" copy="운영시간과 가격은 2026년 8월 26일 확인 기준입니다. 종교행사·날씨·사유 행사로 바뀔 수 있으니 방문 당일 공식 링크를 한 번 더 확인하세요." />
 
         {guides.map((guide, guideIndex) => (
           <article className={`guide-spread ${guide.image ? "has-image" : ""}`} id={guide.id} key={guide.id}>
@@ -403,7 +402,7 @@ export default function Home() {
 
       <section className="planning-section" id="checklist">
         <div className="notebook-section planning-inner">
-          <SectionHeading number="04" kicker="BEFORE WE GO" title="예약과 준비, 여기까지만" copy="체크한 항목은 이 기기에 저장됩니다. 둘이 함께 예약 화면을 보면서 하나씩 지워가세요." />
+          <SectionHeading number="04" kicker="READY? GO!" title="출발 전에 이것만" copy="체크한 항목은 이 기기에 저장됩니다. 둘이 함께 예약 화면을 보면서 하나씩 지워가세요." />
 
           <div className="planning-grid">
             <TravelChecklist />
@@ -445,14 +444,14 @@ export default function Home() {
       </section>
 
       <section className="closing-photo">
-        <img src="./images/gili-sunset.jpg" alt="길리 해변의 나무 사이로 지는 해" loading="lazy" />
-        <div><p>ONE LAST NOTE</p><blockquote>좋은 여행은 많이 보는 일이 아니라,<br />같은 장면을 오래 바라보는 일.</blockquote><a href="#top">수첩 처음으로 ↑</a></div>
+        <img src="./images/hero-cartoon-v2.png" alt="산호초와 대나무 표지판이 있는 밝은 열대 바다 일러스트" loading="lazy" />
+        <div><p>THAT&apos;S THE PLAN!</p><blockquote>계획은 여기까지.<br />나머지는 발리에서.</blockquote><a href="#top">맨 위로 슝 ↑</a></div>
       </section>
 
       <footer>
-        <div><a className="wordmark" href="#top">BALI, <i>between us</i></a><p>2026.10.21 — 11.04 · TWO TRAVELLERS · VOL. 01</p></div>
+        <div><a className="wordmark" href="#top"><span>BALI</span> MODE <b>●</b></a><p>2026.10.21 — 11.04 · 14 NIGHTS · 15 DAYS</p></div>
         <p className="source-note">정보·가격 확인 2026.08.26. 실제 예약·운항·입국 요건은 결제 및 출발 직전에 공식 링크에서 재확인하세요. 사진: <ExternalLink href="https://unsplash.com/photos/rice-terraces-jN9JnZ-SyVc">Radoslav Bali</ExternalLink>, <ExternalLink href="https://unsplash.com/photos/a-beach-with-a-boat-in-the-water-_G6p9nrL1lM">Audrey Rd</ExternalLink>, <ExternalLink href="https://unsplash.com/photos/a-lone-tree-in-the-middle-of-a-body-of-water-009eJNi9_C0">Filipe Freitas</ExternalLink> / Unsplash.</p>
-        <button type="button" onClick={() => window.print()}>PRINT THIS NOTE ↗</button>
+        <button type="button" onClick={() => window.print()}>여행 수첩 인쇄 ↗</button>
       </footer>
     </main>
   );
