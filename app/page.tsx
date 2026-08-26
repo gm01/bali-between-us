@@ -89,21 +89,14 @@ const itinerary = [
   },
   {
     no: "13", date: "11.02", day: "월", place: "ULUWATU", tone: "coast",
-    title: "해변에 하루를 맡기기",
+    title: "해변과 절벽의 하루",
     morning: "Sundays Beach Club 일찍 입장 또는 빈긴 해변",
-    afternoon: "카약·스노클 또는 아무것도 하지 않기",
-    evening: "Warung Local · 숙소에서 쉬기",
-  },
-  {
-    no: "14", date: "11.03", day: "화", place: "ULUWATU", tone: "coast",
-    title: "절벽 위 불의 춤",
-    morning: "늦은 아침 · 카페와 비치 타임",
     afternoon: "16:00 울루와뚜 사원 도착 · 소지품 단단히",
     evening: "18:00 케착 공연 · 예약 저녁",
   },
   {
-    no: "15", date: "11.04", day: "수", place: "BALI → ICN", tone: "festival",
-    title: "파게르웨시, 그리고 집으로",
+    no: "14", date: "11.03", day: "화", place: "BALI → ICN", tone: "move",
+    title: "마지막 수영, 그리고 집으로",
     morning: "체크아웃 · 짐 보관 또는 데이유즈",
     afternoon: "가벼운 쇼핑 · 17:00 이른 저녁",
     evening: "18:30 출발 → 20:00 DPS · 23:05 7C5304",
@@ -144,11 +137,11 @@ const stayGroups = [
     ],
   },
   {
-    area: "Uluwatu", dates: "11.01 — 11.04", nights: "3박", note: "절벽, 해변, 공항 접근성을 모두 챙기는 마지막 장",
+    area: "Uluwatu", dates: "11.01 — 11.03", nights: "2박", note: "절벽, 해변, 공항 접근성을 모두 챙기는 마지막 장",
     options: [
-      { tag: "좋은 위치", name: "La Cama Bali", price: "₩218,336 / 3박", desc: "해변 450m · 위치 9.6 · 평점 9.5", cancel: "세금 포함 · 무료 취소 표시 · 조식 제외", href: "https://www.booking.com/hotel/id/la-cama-bali.ko.html?checkin=2026-11-01&checkout=2026-11-04&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW" },
-      { tag: "성인 전용", name: "PinkCoco Uluwatu", price: "₩453,503 / 3박", desc: "해변 350m · 킹베드 · 위치 9.5", cancel: "세금·조식 포함 · 무료 취소 문구 없음", href: "https://www.booking.com/hotel/id/pinkcoco-bali.ko.html?checkin=2026-11-01&checkout=2026-11-04&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW" },
-      { tag: "PICK! · 마지막", name: "Renaissance Uluwatu", price: "약 ₩672,303 / 3박", desc: "43㎡ 킹룸 · 조식 · 인피니티풀·스파", cancel: "10/29 전 무료 취소 · 10/27 전 결제 없음", href: "https://www.booking.com/hotel/id/renaissance-bali-uluwatu-resort-spa.ko.html?checkin=2026-11-01&checkout=2026-11-04&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW", pick: true },
+      { tag: "좋은 위치", name: "La Cama Bali", price: "약 ₩145,557 / 2박", desc: "해변 450m · 위치 9.6 · 평점 9.5", cancel: "기존 3박 조회가의 2박 환산값 · 결제 전 재확인", href: "https://www.booking.com/hotel/id/la-cama-bali.ko.html?checkin=2026-11-01&checkout=2026-11-03&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW" },
+      { tag: "성인 전용", name: "PinkCoco Uluwatu", price: "약 ₩302,335 / 2박", desc: "해변 350m · 킹베드 · 위치 9.5", cancel: "기존 3박 조회가의 2박 환산값 · 결제 전 재확인", href: "https://www.booking.com/hotel/id/pinkcoco-bali.ko.html?checkin=2026-11-01&checkout=2026-11-03&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW" },
+      { tag: "PICK! · 마지막", name: "Renaissance Uluwatu", price: "약 ₩448,202 / 2박", desc: "43㎡ 킹룸 · 조식 · 인피니티풀·스파", cancel: "기존 3박 조회가의 2박 환산값 · 결제 전 재확인", href: "https://www.booking.com/hotel/id/renaissance-bali-uluwatu-resort-spa.ko.html?checkin=2026-11-01&checkout=2026-11-03&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW", pick: true },
     ],
   },
 ];
@@ -221,7 +214,7 @@ const preparation = [
   { id: "levy", when: "출발 전", title: "Bali Tourist Levy", detail: "Love Bali 공식 사이트 · 1인 Rp150k · QR 저장" },
   { id: "arrival", when: "10.18부터", title: "All Indonesia 신고", detail: "입국 3일 전부터 무료 작성 · 두 사람 QR 오프라인 저장" },
   { id: "weather", when: "출항 72시간 전", title: "롬복 해협 파고 확인", detail: "BMKG 확인 후 보트사 바우처와 출항 시간 재확인" },
-  { id: "flight", when: "출발 7일 전", title: "항공편 재확인", detail: "귀국편은 11/4 23:05 · 인천 도착은 11/5 07:10" },
+  { id: "flight", when: "출발 7일 전", title: "항공편 재확인", detail: "귀국편은 11/3 23:05 · 인천 도착은 11/4 07:10" },
   { id: "bags", when: "짐 싸는 날", title: "섬용 작은 가방", detail: "방수팩·아쿠아슈즈·얇은 우비·멀미약·현금 소액권" },
 ];
 
@@ -297,14 +290,14 @@ export default function Home() {
               <h1>BALI<br />MODE</h1>
               <strong>ON!</strong>
             </div>
-            <span className="sun-sticker">15<br /><small>DAYS</small></span>
+            <span className="sun-sticker">14<br /><small>DAYS</small></span>
           </div>
 
           <div className="hero-copy">
             <p className="eyebrow">VACATION SYSTEM · READY</p>
             <h2>먹고, 눕고,<br />헤엄치고,<br /><em>가끔 이동.</em></h2>
-            <p className="lede">우붓 4박, 길리 에어 4박, 시드멘 2박, 울루와뚜 3박. 계획은 똑똑하게, 분위기는 대충 좋게.</p>
-            <div className="hero-actions"><a className="primary-button" href="#route">일정 보러 가기 ↓</a><span>2026.10.21 — 11.04</span></div>
+            <p className="lede">우붓 4박, 길리 에어 4박, 시드멘 2박, 울루와뚜 2박. 계획은 똑똑하게, 분위기는 대충 좋게.</p>
+            <div className="hero-actions"><a className="primary-button" href="#route">일정 보러 가기 ↓</a><span>2026.10.21 — 11.03</span></div>
             <div className="flight-chip"><b>7C5303</b><span>ICN 15:40 → DPS 21:45</span></div>
           </div>
         </div>
@@ -316,24 +309,24 @@ export default function Home() {
             <li><b>01</b><span>우붓</span><small>4박 · 숲과 예술</small></li>
             <li><b>02</b><span>길리 에어</span><small>4박 · 산호와 노을</small></li>
             <li><b>03</b><span>시드멘</span><small>2박 · 논과 산</small></li>
-            <li><b>04</b><span>울루와뚜</span><small>3박 · 절벽과 바다</small></li>
+            <li><b>04</b><span>울루와뚜</span><small>2박 · 절벽과 바다</small></li>
           </ol>
         </div>
       </section>
 
       <section className="snapshot" aria-label="여행 핵심 정보">
-        <div><small>TRAVEL TIME</small><strong>14박 15일</strong><span>귀국 도착은 11/5</span></div>
+        <div><small>TRAVEL TIME</small><strong>13박 14일</strong><span>귀국 도착은 11/4</span></div>
         <div><small>TIME ZONE</small><strong>한국 −1시간</strong><span>표시 시각은 모두 현지</span></div>
         <div><small>WEATHER</small><strong>건기 → 우기 전환</strong><span>오전 야외 · 오후 플랜 B</span></div>
         <div><small>MONEY NOTE</small><strong>Rp100k ≈ ₩7,800</strong><span>8/26 계획 환율 기준</span></div>
       </section>
 
       <section className="notebook-section route-section" id="route">
-        <SectionHeading number="01" kicker="DAY BY DAY" title="15일, 대충 이런 흐름" copy="이동일 저녁은 비우고 바다는 오전에. 나머지는 그날 컨디션과 날씨가 정합니다." />
+        <SectionHeading number="01" kicker="DAY BY DAY" title="14일, 대충 이런 흐름" copy="이동일 저녁은 비우고 바다는 오전에. 나머지는 그날 컨디션과 날씨가 정합니다." />
 
         <div className="route-line" aria-label="전체 숙박 루트">
           {[
-            ["10.21", "TUBAN", "1N"], ["10.22", "UBUD", "4N"], ["10.26", "GILI AIR", "4N"], ["10.30", "SIDEMEN", "2N"], ["11.01", "ULUWATU", "3N"], ["11.04", "DPS", "OUT"],
+            ["10.21", "TUBAN", "1N"], ["10.22", "UBUD", "4N"], ["10.26", "GILI AIR", "4N"], ["10.30", "SIDEMEN", "2N"], ["11.01", "ULUWATU", "2N"], ["11.03", "DPS", "OUT"],
           ].map((stop, index) => <div key={stop[1]}><i>{index + 1}</i><small>{stop[0]}</small><strong>{stop[1]}</strong><span>{stop[2]}</span></div>)}
         </div>
 
@@ -348,7 +341,7 @@ export default function Home() {
         </div>
 
         <div className="transport-note">
-          <div><p className="mini-kicker">FAST BOAT RULE</p><h3>국제선과 배는 같은 날 연결하지 않기.</h3><p>10월 30일에 길리에서 발리 본섬으로 돌아와 귀국편까지 5일의 여유를 남깁니다. 표기 운항은 2–2.5시간이어도 체크인·대기·중간 기항을 합쳐 문에서 문까지 4–5시간을 비워두세요.</p></div>
+          <div><p className="mini-kicker">FAST BOAT RULE</p><h3>국제선과 배는 같은 날 연결하지 않기.</h3><p>10월 30일에 길리에서 발리 본섬으로 돌아와 11월 3일 귀국편까지 충분한 여유를 남깁니다. 표기 운항은 2–2.5시간이어도 체크인·대기·중간 기항을 합쳐 문에서 문까지 4–5시간을 비워두세요.</p></div>
           <ol>
             <li><span>01</span><p><strong>오전 직항 우선</strong>파당바이 출항 60분 전 도착</p></li>
             <li><span>02</span><p><strong>48–72시간 전 재확인</strong>날씨·항만 통제·바우처 확인</p></li>
@@ -381,7 +374,7 @@ export default function Home() {
           </div>
 
           <div className="stay-total">
-            <span>추천 조합 합계</span><strong>약 ₩2,001,207</strong><p>Asta House + Umah Gatra + Villa Saia + Patal Kikian + Renaissance · 2인 14박 · 항공/교통 제외</p>
+            <span>추천 조합 합계</span><strong>약 ₩1,777,106</strong><p>Asta House + Umah Gatra + Villa Saia + Patal Kikian + Renaissance · 2인 13박 · 항공/교통 제외</p>
           </div>
         </div>
       </section>
@@ -409,8 +402,8 @@ export default function Home() {
             <aside className="flight-panel">
               <p className="mini-kicker">FLIGHT CARD</p>
               <div className="flight-leg"><span>OUT</span><div><small>WED · 10.21</small><strong>ICN 15:40</strong><i>7C5303 · 7h 05m</i><strong>DPS 21:45</strong></div></div>
-              <div className="flight-leg"><span>IN</span><div><small>WED · 11.04</small><strong>DPS 23:05</strong><i>7C5304 · 7h 05m</i><strong>ICN 07:10 <em>+1</em></strong></div></div>
-              <p className="flight-warning">귀국편 인천 도착은 <strong>11월 5일 목요일</strong>. DPS에는 20:00까지 도착하도록 남부 호텔에서 18:30 전후 출발합니다.</p>
+              <div className="flight-leg"><span>IN</span><div><small>TUE · 11.03</small><strong>DPS 23:05</strong><i>7C5304 · 7h 05m</i><strong>ICN 07:10 <em>+1</em></strong></div></div>
+              <p className="flight-warning">귀국편 인천 도착은 <strong>11월 4일 수요일</strong>. DPS에는 20:00까지 도착하도록 남부 호텔에서 18:30 전후 출발합니다.</p>
               <ExternalLink className="outline-link" href="https://www.jejuair.net/en/prepare/flight/viewScheduleInfo.do">제주항공 일정 재확인</ExternalLink>
             </aside>
           </div>
@@ -437,7 +430,7 @@ export default function Home() {
             <p className="mini-kicker">DATES TO REMEMBER</p>
             <div><strong>10.21–25</strong><span>Ubud Writers & Readers Festival</span><p>우붓 4박과 겹칩니다. 숙소와 인기 식당을 먼저 확보하세요.</p></div>
             <div><strong>10.31</strong><span>Saraswati</span><p>시드멘 체류일. 사원과 소규모 업장의 운영 변경, 지역 의식을 존중하세요.</p></div>
-            <div><strong>11.04</strong><span>Pagerwesi</span><p>귀국일. 기사 차량을 미리 확정하고 평소보다 넉넉한 공항 이동 시간을 둡니다.</p></div>
+            <div><strong>11.03</strong><span>RETURN FLIGHT</span><p>7C5304는 23:05 출발. 기사 차량과 데이유즈를 미리 확정하고 20:00까지 공항에 도착하세요.</p></div>
             <ExternalLink href="https://ubudwritersfestival.com/">우붓 축제</ExternalLink><ExternalLink href="https://bimashindu.kemenag.go.id/storage/files/Hari%20Libur%20Nasional%2C%20Libur%20Fakultatif%2C%20dan%20Cuti%20Bersama%20Tahun%202026.pdf">2026 힌두 휴일표</ExternalLink>
           </div>
         </div>
@@ -449,7 +442,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <div><a className="wordmark" href="#top"><span>BALI</span> MODE <b>●</b></a><p>2026.10.21 — 11.04 · 14 NIGHTS · 15 DAYS</p></div>
+        <div><a className="wordmark" href="#top"><span>BALI</span> MODE <b>●</b></a><p>2026.10.21 — 11.03 · 13 NIGHTS · 14 DAYS</p></div>
         <p className="source-note">정보·가격 확인 2026.08.26. 실제 예약·운항·입국 요건은 결제 및 출발 직전에 공식 링크에서 재확인하세요. 사진: <ExternalLink href="https://unsplash.com/photos/rice-terraces-jN9JnZ-SyVc">Radoslav Bali</ExternalLink>, <ExternalLink href="https://unsplash.com/photos/a-beach-with-a-boat-in-the-water-_G6p9nrL1lM">Audrey Rd</ExternalLink>, <ExternalLink href="https://unsplash.com/photos/a-lone-tree-in-the-middle-of-a-body-of-water-009eJNi9_C0">Filipe Freitas</ExternalLink> / Unsplash.</p>
         <button type="button" onClick={() => window.print()}>여행 수첩 인쇄 ↗</button>
       </footer>
