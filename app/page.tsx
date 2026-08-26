@@ -155,7 +155,7 @@ const stayGroups = [
 
 const guides = [
   {
-    id: "ubud", number: "A", place: "UBUD", title: "초록과 의식 사이", subtitle: "일찍 걷고, 한낮에는 쉬고, 저녁엔 좋은 식탁으로.", image: "/images/ubud-rice.jpg", imageAlt: "우붓의 초록빛 계단식 논",
+    id: "ubud", number: "A", place: "UBUD", title: "초록과 의식 사이", subtitle: "일찍 걷고, 한낮에는 쉬고, 저녁엔 좋은 식탁으로.", image: "./images/ubud-rice.jpg", imageAlt: "우붓의 초록빛 계단식 논",
     sights: [
       { name: "Sacred Monkey Forest", meta: "09:00–18:00 · Rp130k", note: "마지막 입장 17:00. 음식·안경·모자를 가방에 넣고 원숭이와 눈을 마주치지 않기.", href: "https://monkeyforestubud.com/visit/" },
       { name: "Campuhan Ridge Walk", meta: "무료 · 06:00–09:00 추천", note: "왕복 약 1시간. 그늘이 적고 비 뒤에는 미끄러워 일출 산책이 가장 편하다.", href: "https://visitbaliguide.com/ubud/campuhan-ridge-walk" },
@@ -169,7 +169,7 @@ const guides = [
     ],
   },
   {
-    id: "gili", number: "B", place: "GILI AIR", title: "차가 없는 작은 섬", subtitle: "파티의 길리 T보다 고요하고, 길리 메노보다 식당 선택이 많은 균형점.", image: "/images/gili-water.jpg", imageAlt: "길리 제도의 맑은 바다와 모래 해변",
+    id: "gili", number: "B", place: "GILI AIR", title: "차가 없는 작은 섬", subtitle: "파티의 길리 T보다 고요하고, 길리 메노보다 식당 선택이 많은 균형점.", image: "./images/gili-water.jpg", imageAlt: "길리 제도의 맑은 바다와 모래 해변",
     sights: [
       { name: "3 Islands Snorkeling", meta: "3–4시간 · 합승 Rp150–250k/인", note: "커플은 08:00 전후 프라이빗 보트(Rp850k–1.2m/보트). 구명조끼와 가이드 포함 확인.", href: "https://visitgiliislands.com/activities/snorkeling" },
       { name: "BASK Nest", meta: "해안 접근 무료 · 수심 약 4m", note: "길리 메노 해안 약 40m. 조각을 밟거나 만지지 말고 보트·조류를 주의한다.", href: "https://underwatersculpture.com/projects/nest/" },
@@ -445,7 +445,7 @@ export default function Home() {
       </section>
 
       <section className="closing-photo">
-        <img src="/images/gili-sunset.jpg" alt="길리 해변의 나무 사이로 지는 해" loading="lazy" />
+        <img src="./images/gili-sunset.jpg" alt="길리 해변의 나무 사이로 지는 해" loading="lazy" />
         <div><p>ONE LAST NOTE</p><blockquote>좋은 여행은 많이 보는 일이 아니라,<br />같은 장면을 오래 바라보는 일.</blockquote><a href="#top">수첩 처음으로 ↑</a></div>
       </section>
 
