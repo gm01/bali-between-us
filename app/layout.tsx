@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     title: "BALI, AT OUR PACE. — 13박 14일 여행 플래너",
-    description: "우붓, 길리 에어, 시드멘, 울루와뚜로 이어지는 2026년 발리 13박 14일 여행 플래너",
+    description: "우붓, 길리 에어, 스미냑, 짱구, 울루와뚜로 이어지는 2026년 발리 13박 14일 여행 플래너",
     icons: { icon: "/icon.png", shortcut: "/icon.png" },
     openGraph: {
       title: "BALI, AT OUR PACE.",

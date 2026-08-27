@@ -67,24 +67,24 @@ const itinerary = [
     evening: "섬의 마지막 저녁 · 짐은 작은 가방으로 정리",
   },
   {
-    no: "10", date: "10.30", day: "금", place: "GILI → SIDEMEN", tone: "move",
-    title: "바다에서 산으로",
+    no: "10", date: "10.30", day: "금", place: "GILI → SEMINYAK", tone: "move",
+    title: "섬에서 서쪽 해안으로",
     morning: "08:30 전후 보트 · 체크인은 45–60분 전",
-    afternoon: "파당바이 도착 후 전용차 45–75분",
-    evening: "시드멘 체크인 · 숙소 전망과 조용한 저녁",
+    afternoon: "파당바이 도착 · 전용차로 스미냑 2.5–4시간",
+    evening: "체크인 · 페티텐겟 산책과 가벼운 저녁",
   },
   {
-    no: "11", date: "10.31", day: "토", place: "SIDEMEN", tone: "festival",
-    title: "사라스와티의 토요일",
-    morning: "06:30 논길 산책 · 비 뒤에는 가이드 동행",
-    afternoon: "수영장과 스파 · 지역 의식은 멀리서 존중",
-    evening: "Sahaja 전망석 또는 Sleeping Gajah",
+    no: "11", date: "10.31", day: "토", place: "CANGGU · SEMINYAK", tone: "festival",
+    title: "짱구를 천천히 걷는 날",
+    morning: "08:30 페레레난 브런치 · 바투볼롱 산책",
+    afternoon: "숍과 카페 · 숙소로 돌아와 수영과 휴식",
+    evening: "The Lawn 선셋 또는 Potato Head 저녁",
   },
   {
-    no: "12", date: "11.01", day: "일", place: "SIDEMEN → ULUWATU", tone: "move",
+    no: "12", date: "11.01", day: "일", place: "SEMINYAK → ULUWATU", tone: "move",
     title: "남쪽 절벽으로",
-    morning: "느린 조식 · 10:30 전용차 출발",
-    afternoon: "교통 포함 3–4시간 블록 · 숙소 체크인",
+    morning: "느린 조식 · 체크아웃 후 전용차 출발",
+    afternoon: "교통 포함 1.5–3시간 블록 · 숙소 체크인",
     evening: "Mana Uluwatu 선셋 디너",
   },
   {
@@ -129,11 +129,11 @@ const stayGroups = [
     ],
   },
   {
-    area: "Sidemen", dates: "10.30 — 11.01", nights: "2박", note: "관광보다 숙소의 전망과 고요가 목적",
+    area: "Seminyak · Canggu", dates: "10.30 — 11.01", nights: "2박", note: "스미냑에 짐을 두고 짱구는 하루만 다녀오는 구성",
     options: [
-      { tag: "실속", name: "Abian View House", price: "₩70,431 / 2박", desc: "평점 9.8 · 위치 9.6 · 세금·조식 포함", cancel: "무료 취소 표시 · 검색 당시 2실", href: "https://www.booking.com/hotel/id/abian-view-house.ko.html?checkin=2026-10-30&checkout=2026-11-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW" },
-      { tag: "추천 · 전망", name: "Patal Kikian Villa", price: "₩453,137 / 2박", desc: "아궁산·논·계곡 전망 · 50㎡ 방갈로", cancel: "10/25 전 무료 취소 · 10/23 전 결제 없음", href: "https://www.booking.com/hotel/id/patal-kikian-sidemen.ko.html?checkin=2026-10-30&checkout=2026-11-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW", pick: true },
-      { tag: "프라이빗 풀", name: "The Sidemen Villa", price: "₩620,920 / 2박", desc: "전용 풀 · 플로팅 조식 1회 · 평점 9.7", cancel: "무료 취소 표시 · 검색 당시 1실", href: "https://www.booking.com/hotel/id/the-villa-sidemen.ko.html?checkin=2026-10-30&checkout=2026-11-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW" },
+      { tag: "실속 · 페티텐겟", name: "Viva Dash Hotel Seminyak", price: "실시간 요금 확인", desc: "페티텐겟 중심 · 넓은 객실 · 루프톱과 수영장", cancel: "10/30–11/1 객실·세금·무료 취소 조건 확인", href: "https://www.booking.com/hotel/id/dash-seminyak.html?checkin=2026-10-30&checkout=2026-11-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW" },
+      { tag: "추천 · 위치", name: "Kanvaz Village Resort", price: "실시간 요금 확인", desc: "Jl. Petitenget · 위치 평점 9.5 · 수영장과 스파", cancel: "10/30–11/1 객실·세금·무료 취소 조건 확인", href: "https://www.booking.com/hotel/id/kanvaz-village-resort-seminyak.id.html?checkin=2026-10-30&checkout=2026-11-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=KRW", pick: true },
+      { tag: "디자인 스테이", name: "Potato Head Suites", price: "공식 요금 확인", desc: "해변 앞 · 디자인·웰니스 프로그램 · 비치클럽 연결", cancel: "공식 예약 화면에서 객실·취소 정책 재확인", href: "https://seminyak.potatohead.co/stay" },
     ],
   },
   {
@@ -176,17 +176,17 @@ const guides = [
     ],
   },
   {
-    id: "sidemen", number: "C", place: "SIDEMEN + EAST", title: "논과 산이 만든 쉼표", subtitle: "관광지를 많이 넣기보다 전망 좋은 숙소에 오래 머무는 구간.",
+    id: "seminyak", number: "C", place: "SEMINYAK + CANGGU", title: "서쪽 해안의 하루", subtitle: "스미냑에 짐을 두고 짱구는 오전부터 하루만. 정체가 심해지기 전에 움직인다.",
     sights: [
-      { name: "Sidemen Rice Walk", meta: "메인 루프 Rp25k", note: "06:00–09:00 추천. 2시간 가이드는 약 Rp200k/인, 비 뒤에는 운동화 필수.", href: "https://www.walkmyworld.com/posts/sidemen-rice-terrace-walk" },
-      { name: "Besakih Temple", meta: "07:00–18:00 · 약 Rp150k", note: "사롱·공식 가이드·상행 셔틀 포함 안내. 2026년 11월 목표 복원 공사로 동선 변동 가능.", href: "https://pura-besakih.com/hours-and-fees/" },
-      { name: "Tirta Gangga", meta: "06:00–19:00 · Rp90k", note: "08:00 이전이 한적하다. 젖은 징검다리와 한낮 단체 관광객을 피하기.", href: "https://www.google.com/maps/search/?api=1&query=Tirta+Gangga+Water+Palace" },
-      { name: "Blue Lagoon", meta: "08:00–17:00 · Rp150–350k", note: "파당바이 스노클링은 배 이동일과 분리. 파고에 따른 취소 조건 확인.", href: "https://sisparnas.kemenpar.go.id/p/131830" },
+      { name: "Petitenget + Seminyak Beach", meta: "개방형 해변 · 무료", note: "숙소에서 가볍게 걷기 좋은 일몰 코스. 수영은 낮에 안전 깃발과 인명구조원 구역에서만.", href: "https://www.indonesia.travel/gb/en/destination/bali-nusa-tenggara/bali/pantai-seminyak" },
+      { name: "Batu Bolong + Echo Beach", meta: "오전 방문 · 무료", note: "08:30 전후 도착해 해변과 숍을 걸어본다. 오후에는 스미냑 복귀 정체를 넉넉히 계산.", href: "https://www.echobeachclub.com/" },
+      { name: "The Lawn Canggu", meta: "선셋 · 예약 권장", note: "짱구에서 저녁까지 머물고 싶을 때. 좌석·최소 주문 조건은 날짜별 예약 화면에서 확인.", href: "https://www.thelawncanggu.com/home" },
+      { name: "Potato Head Beach Club", meta: "워크인 가능 · 시간대별 정책", note: "스미냑으로 돌아온 뒤의 대안. 16:00–18:30 일부 구역은 리딤 가능한 커버 정책을 확인.", href: "https://seminyak.potatohead.co/feast/beach-club" },
     ],
     food: [
-      { name: "Sahaja at Samanvaya", meta: "아시아·인도네시아 · Rp250–450k++", note: "계곡 전망의 커플 저녁. 외부 손님은 전망석 예약 권장.", href: "https://samanvaya-bali.com/dine/" },
-      { name: "Sleeping Gajah", meta: "발리·아시아 퓨전 · Rp200–400k++", note: "강과 언덕이 보이는 테이블은 해질녘 예약이 좋다.", href: "https://sleepinggajah.com/menu/" },
-      { name: "Dapur Kapulaga", meta: "로컬 가정식 · Rp50–100k", note: "채식 선택이 있는 소박한 워룽. 대체로 워크인 가능.", href: "https://www.google.com/maps/search/?api=1&query=Warung+Dapur+Kapulaga+Sidemen" },
+      { name: "Lima Bay", meta: "페레레난 · 08:00–21:00", note: "짱구 하루의 느린 브런치. 논 전망 자리는 오전에 가는 편이 편하다.", href: "https://www.limabaybali.com/" },
+      { name: "Merah Putih", meta: "모던 인도네시아 · Rp400–650k", note: "페티텐겟의 데이트 저녁. 여행 일정이 확정되면 미리 예약.", href: "https://merahputihbali.com/restaurant/" },
+      { name: "Echo Beach Club", meta: "해산물 · 캐주얼", note: "해변 산책 뒤 가벼운 점심 대안. 영업시간과 행사 여부는 방문일에 재확인.", href: "https://www.echobeachclub.com/" },
     ],
   },
   {
@@ -194,13 +194,13 @@ const guides = [
     sights: [
       { name: "Uluwatu Temple + Kecak", meta: "사원 Rp60k · 공연 Rp150k", note: "16:00 입장, 늦어도 17:00 도착. 두 티켓은 별도이며 휴대폰·안경을 원숭이에게서 보호.", href: "https://uluwatutemple.id/uluwatu-kecak-dance" },
       { name: "Sundays Beach Club", meta: "07:30–22:00 · Rp800k", note: "Rp500k F&B 크레딧 포함. 만조·파고에 따라 해변 공간과 장비 운영이 달라진다.", href: "https://www.sundaysbeachclub.com/daily-beach-pass/" },
-      { name: "Seminyak Beach", meta: "개방형 해변 · 무료", note: "일몰 산책은 좋지만 수영은 낮에 안전 깃발과 인명구조원 구역에서만.", href: "https://www.indonesia.travel/gb/en/destination/bali-nusa-tenggara/bali/pantai-seminyak" },
-      { name: "Potato Head", meta: "10:00–24:00 · 시간대별 정책", note: "스미냑 외출 날의 선셋 대안. 데이베드와 특별 행사 조건은 공식 페이지에서 재확인.", href: "https://seminyak.potatohead.co/feast/beach-club" },
+      { name: "Padang Padang Beach", meta: "오전 방문 추천", note: "계단과 조수 시간을 고려해 오전에 방문. 파도가 큰 날은 수영보다 산책 위주로.", href: "https://www.indonesia.travel/gb/en/destination/bali-nusa-tenggara/bali/padang-padang-beach" },
+      { name: "Melasti Beach", meta: "남쪽 해변 · 현장 요금", note: "절벽 도로와 맑은 물이 매력적인 반나절 대안. 귀국일보다 11월 1–2일에 배치.", href: "https://www.google.com/maps/search/?api=1&query=Melasti+Beach+Bali" },
     ],
     food: [
       { name: "Mana Uluwatu", meta: "절벽 전망 · Rp250–450k", note: "캘리포니아·멕시칸과 인도네시아 향신료. 일몰석 예약 권장.", href: "https://uluwatusurfvillas.com/restaurant/" },
       { name: "Warung Local", meta: "나시참푸르 · Rp50–100k", note: "골라 담는 편안한 로컬 한 끼. 07:00–22:00, 워크인.", href: "https://linktr.ee/warunglocal" },
-      { name: "Merah Putih", meta: "모던 인도네시아 · Rp400–650k", note: "스미냑 나들이 날의 데이트 저녁. 예약 필수에 가깝다.", href: "https://merahputihbali.com/restaurant/" },
+      { name: "Jimbaran Seafood", meta: "해변 저녁 · 시가", note: "귀국일 이른 저녁 대안. 주문 전 무게·단가·조리비와 총액을 확인.", href: "https://www.google.com/maps/search/?api=1&query=Jimbaran+Seafood+Bali" },
     ],
   },
 ];
@@ -236,10 +236,13 @@ function TravelChecklist() {
   const [checked, setChecked] = useState<string[]>([]);
 
   useEffect(() => {
-    try {
-      const saved = window.localStorage.getItem("bali-between-us-checklist");
-      if (saved) setChecked(JSON.parse(saved));
-    } catch { /* private browsing can block storage */ }
+    const restoreId = window.setTimeout(() => {
+      try {
+        const saved = window.localStorage.getItem("bali-between-us-checklist");
+        if (saved) setChecked(JSON.parse(saved));
+      } catch { /* private browsing can block storage */ }
+    }, 0);
+    return () => window.clearTimeout(restoreId);
   }, []);
 
   const toggle = (id: string) => {
@@ -284,9 +287,9 @@ export default function Home() {
 
         <div className="hero-grid">
           <div className="hero-copy">
-            <p className="eyebrow">BALI · GILI AIR</p>
+            <p className="eyebrow">BALI · GILI AIR · WEST COAST</p>
             <h1>Bali,<br />at our pace.</h1>
-            <p className="lede">우붓에서 길리 에어, 시드멘과 울루와뚜까지. 이동은 단순하게, 머무는 시간은 충분하게 잡은 13박 14일.</p>
+            <p className="lede">우붓과 길리 에어를 지나 스미냑에 머물고, 짱구의 하루와 울루와뚜의 바다를 담은 13박 14일.</p>
             <div className="hero-actions"><a className="primary-button" href="#route">일정 보기</a><span>2026.10.21 — 11.03</span></div>
             <div className="flight-chip"><b>7C5303</b><span>ICN 15:40 → DPS 21:45</span></div>
           </div>
@@ -303,7 +306,7 @@ export default function Home() {
             <li><b>00</b><span>공항 인근</span><small>1박 · 늦은 도착</small></li>
             <li><b>01</b><span>우붓</span><small>4박 · 숲과 예술</small></li>
             <li><b>02</b><span>길리 에어</span><small>4박 · 산호와 노을</small></li>
-            <li><b>03</b><span>시드멘</span><small>2박 · 논과 산</small></li>
+            <li><b>03</b><span>스미냑 · 짱구</span><small>2박 · 서쪽 해안</small></li>
             <li><b>04</b><span>울루와뚜</span><small>2박 · 절벽과 바다</small></li>
           </ol>
         </div>
@@ -321,7 +324,7 @@ export default function Home() {
 
         <div className="route-line" aria-label="전체 숙박 루트">
           {[
-            ["10.21", "TUBAN", "1N"], ["10.22", "UBUD", "4N"], ["10.26", "GILI AIR", "4N"], ["10.30", "SIDEMEN", "2N"], ["11.01", "ULUWATU", "2N"], ["11.03", "DPS", "OUT"],
+            ["10.21", "TUBAN", "1N"], ["10.22", "UBUD", "4N"], ["10.26", "GILI AIR", "4N"], ["10.30", "SEMINYAK", "2N"], ["11.01", "ULUWATU", "2N"], ["11.03", "DPS", "OUT"],
           ].map((stop, index) => <div key={stop[1]}><i>{index + 1}</i><small>{stop[0]}</small><strong>{stop[1]}</strong><span>{stop[2]}</span></div>)}
         </div>
 
@@ -340,7 +343,7 @@ export default function Home() {
           <ol>
             <li><span>01</span><p><strong>오전 직항 우선</strong>파당바이 출항 60분 전 도착</p></li>
             <li><span>02</span><p><strong>48–72시간 전 재확인</strong>날씨·항만 통제·바우처 확인</p></li>
-            <li><span>03</span><p><strong>작은 섬 가방 분리</strong>모래길과 도보 이동 대비</p></li>
+            <li><span>03</span><p><strong>본섬 기사 차량 예약</strong>파당바이 → 스미냑 2.5–4시간 확보</p></li>
           </ol>
           <div className="transport-links"><ExternalLink href="https://bluewater-express.com/schedules/">BlueWater 시간표</ExternalLink><ExternalLink href="https://maritim.bmkg.go.id/cuaca/perairan/selat-lombok-bagian-utara">BMKG 해상 날씨</ExternalLink></div>
         </div>
@@ -369,7 +372,7 @@ export default function Home() {
           </div>
 
           <div className="stay-total">
-            <span>추천 조합 합계</span><strong>약 ₩1,777,106</strong><p>Asta House + Umah Gatra + Villa Saia + Patal Kikian + Renaissance · 2인 13박 · 항공/교통 제외</p>
+            <span>추천 조합 합계</span><strong>약 ₩1,323,969 + 스미냑 2박</strong><p>Asta House + Umah Gatra + Villa Saia + Kanvaz + Renaissance · 스미냑은 실시간 요금 별도 · 2인 13박 · 항공/교통 제외</p>
           </div>
         </div>
       </section>
@@ -424,7 +427,7 @@ export default function Home() {
           <div className="heads-up">
             <p className="mini-kicker">DATES TO REMEMBER</p>
             <div><strong>10.21–25</strong><span>Ubud Writers & Readers Festival</span><p>우붓 4박과 겹칩니다. 숙소와 인기 식당을 먼저 확보하세요.</p></div>
-            <div><strong>10.31</strong><span>Saraswati</span><p>시드멘 체류일. 사원과 소규모 업장의 운영 변경, 지역 의식을 존중하세요.</p></div>
+            <div><strong>10.31</strong><span>Saraswati</span><p>짱구·스미냑 이동일. 사원 주변 교통과 소규모 업장의 운영 변경을 확인하세요.</p></div>
             <div><strong>11.03</strong><span>RETURN FLIGHT</span><p>7C5304는 23:05 출발. 기사 차량과 데이유즈를 미리 확정하고 20:00까지 공항에 도착하세요.</p></div>
             <ExternalLink href="https://ubudwritersfestival.com/">우붓 축제</ExternalLink><ExternalLink href="https://bimashindu.kemenag.go.id/storage/files/Hari%20Libur%20Nasional%2C%20Libur%20Fakultatif%2C%20dan%20Cuti%20Bersama%20Tahun%202026.pdf">2026 힌두 휴일표</ExternalLink>
           </div>
