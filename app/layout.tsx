@@ -9,17 +9,17 @@ export async function generateMetadata(): Promise<Metadata> {
   const origin = `${protocol}://${host}`;
 
   return {
-    title: "BALI MODE: ON — 13박 14일 여행 플래너",
+    title: "BALI, AT OUR PACE. — 13박 14일 여행 플래너",
     description: "우붓, 길리 에어, 시드멘, 울루와뚜로 이어지는 2026년 발리 13박 14일 여행 플래너",
     icons: { icon: "/icon.png", shortcut: "/icon.png" },
     openGraph: {
-      title: "BALI MODE: ON",
+      title: "BALI, AT OUR PACE.",
       description: "먹고, 눕고, 헤엄치고, 가끔 이동하는 13박 14일 발리 여행",
-      images: [{ url: `${origin}/og-v2.png`, width: 1200, height: 630, alt: "BALI MODE: ON" }],
+      images: [{ url: `${origin}/og-minimal.png`, width: 1200, height: 630, alt: "BALI, AT OUR PACE." }],
       locale: "ko_KR",
       type: "website",
     },
-    twitter: { card: "summary_large_image", title: "BALI MODE: ON", images: [`${origin}/og-v2.png`] },
+    twitter: { card: "summary_large_image", title: "BALI, AT OUR PACE.", images: [`${origin}/og-minimal.png`] },
   };
 }
 
