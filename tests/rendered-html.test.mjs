@@ -1,54 +1,53 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { stops, itinerary, stays, booking } from "../app/trip-data.ts";
 
 async function render() {
-  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-  workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
-  const { default: worker } = await import(workerUrl.href);
-
-  return worker.fetch(
-    new Request("http://localhost/", {
-      headers: { accept: "text/html" },
-    }),
-    {
-      ASSETS: {
-        fetch: async () => new Response("Not found", { status: 404 }),
-      },
-    },
-    {
-      waitUntil() {},
-      passThroughOnException() {},
-    },
-  );
+  const { default: worker } = await import("../dist/server/index.js");
+  return worker.fetch(new Request("http://localhost/", {headers:{accept:"text/html"}}),
+    {ASSETS:{fetch:async()=>new Response("Not found",{status:404})}},
+    {waitUntil(){},passThroughOnException(){}});
 }
-
-test("server-renders the west-coast itinerary", async () => {
-  const response = await render();
-  assert.equal(response.status, 200);
-  assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
-
-  const html = await response.text();
-  assert.match(html, /Bali,<br\/>at our pace\./);
-  assert.match(html, /GILI → SEMINYAK/);
-  assert.match(html, /CANGGU · SEMINYAK/);
-  assert.match(html, /23:05 7C5304/);
-  assert.doesNotMatch(html, /SIDEMEN|시드멘/i);
+test("13 nights are contiguous and match each booked date range", () => {
+  assert.deepEqual(stops.map(s=>s.nights),[4,4,3,2]);
+  assert.equal(stops.reduce((sum,s)=>sum+s.nights,0),13);
+  stops.forEach((s,i)=>{
+    assert.equal((Date.parse(s.checkout)-Date.parse(s.checkin))/86400000,s.nights);
+    if(i) assert.equal(stops[i-1].checkout,s.checkin);
+  });
+  assert.equal(stops[0].checkin,"2026-10-21");
+  assert.equal(stops.at(-1).checkout,"2026-11-03");
 });
-
-test("keeps route, stays, and metadata aligned", async () => {
-  const [css, page, layout, staticHtml] = await Promise.all([
-    readFile(new URL("../app/globals.css", import.meta.url), "utf8"),
-    readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
-    readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
-    readFile(new URL("../pages-src/index.html", import.meta.url), "utf8"),
-  ]);
-
-  assert.match(page, /area: "Seminyak · Canggu"/);
-  assert.match(page, /Kanvaz Village Resort/);
-  assert.match(page, /id: "seminyak"/);
-  assert.match(layout, /스미냑, 짱구, 울루와뚜/);
-  assert.match(staticHtml, /스미냑, 짱구, 울루와뚜/);
-  assert.match(css, /--paper: #f5f4f0/);
-  assert.doesNotMatch(`${page}${layout}${staticHtml}`, /SIDEMEN|시드멘/i);
+test("14 consecutive local days and nine full non-transfer days",()=>{
+  assert.equal(itinerary.length,14);
+  itinerary.forEach((day,i)=>{
+    const date=new Date(Date.UTC(2026,9,21+i));
+    assert.equal(day.date,date.toISOString().slice(5,10).replace("-","."));
+    assert.ok(stops.some(s=>s.id===day.region));
+  });
+  assert.equal(itinerary.filter(d=>d.kind==="FULL").length,9);
+  assert.match(itinerary.at(-1).night,/23:05 7C5304/);
+});
+test("hotel searches use the correct regional dates and party size",()=>{
+  for(const stay of stays){
+    const stop=stops.find(s=>s.id===stay.region);
+    assert.ok(stop);
+    const u=new URL(stay.query?booking(stay.query,stop.checkin,stop.checkout):stay.official);
+    assert.equal(u.searchParams.get(stay.query?"checkin":"check_in"),stop.checkin);
+    assert.equal(u.searchParams.get(stay.query?"checkout":"check_out"),stop.checkout);
+    assert.equal(u.searchParams.get(stay.query?"group_adults":"adults"),"2");
+  }
+});
+test("renders the complete new notebook with honest booking and sync status",async()=>{
+  const response=await render();
+  assert.equal(response.status,200);
+  assert.match(response.headers.get("content-type")??"",/^text\/html/);
+  const html=await response.text();
+  assert.match(html,/Bali, at our pace\./);
+  assert.match(html,/GILI TRAWANGAN/);
+  assert.equal((html.match(/class="day"/g)??[]).length,14);
+  assert.match(html,/객실 재고와 최종 견적은 확인되지/);
+  assert.match(html,/자동으로 바뀌지는 않습니다/);
+  assert.doesNotMatch(html,/길리 에어|GILI AIR|SIDEMEN|시드멘|PNR|전자항공권/i);
+  for(const id of ["route","stays","spots","checklist"]) assert.ok(html.includes('id="'+id+'"'));
 });
